@@ -6,107 +6,105 @@ package boolean
 
 // CanEnter проверяет, может ли человек войти.
 //
-// TODO: вход разрешён только совершеннолетнему человеку с билетом.
+// TODO: верните true, только если age не меньше 18 и hasTicket равен true.
 func CanEnter(age int, hasTicket bool) bool {
 	return false
 }
 
 // IsAdult проверяет, является ли человек совершеннолетним.
 //
-// TODO: определите совершеннолетие по возрасту.
+// TODO: верните true при age >= 18; для меньшего, нулевого или отрицательного возраста верните false.
 func IsAdult(age int) bool {
 	return false
 }
 
 // CanBuyAlcohol проверяет, можно ли купить алкоголь.
 //
-// TODO: для учебной задачи используйте возрастное ограничение из тестов.
+// TODO: в рамках задания верните true при age >= 18, иначе false.
 func CanBuyAlcohol(age int) bool {
 	return false
 }
 
 // CanRest проверяет, можно ли отдыхать.
 //
-// TODO: отдых возможен в выходной или праздничный день.
+// TODO: верните true, если isWeekend или isHoliday равен true. Если оба флага false, верните false.
 func CanRest(isWeekend, isHoliday bool) bool {
 	return false
 }
 
 // IsWorkingDay проверяет, является ли день рабочим.
 //
-// TODO: обработайте английские названия дней недели.
-// Неизвестные значения считаются нерабочими.
+// TODO: верните true для строк "monday", "tuesday", "wednesday", "thursday" и "friday". Для выходных и неизвестных значений верните false.
 func IsWorkingDay(day string) bool {
 	return false
 }
 
 // HasAccess проверяет доступ пользователя.
 //
-// TODO: доступ есть у пользователя с административными правами или у владельца ресурса.
+// TODO: верните true, если isAdmin или isOwner равен true; без обоих прав верните false.
 func HasAccess(isAdmin, isOwner bool) bool {
 	return false
 }
 
 // CanApplyDiscount проверяет, можно ли применить скидку.
 //
-// TODO: скидка доступна VIP-пользователю или при достаточной сумме заказа.
+// TODO: верните true для VIP-пользователя либо при total >= 5000. В остальных случаях верните false.
 func CanApplyDiscount(isVIP bool, total int) bool {
 	return false
 }
 
 // ShouldNotify проверяет, нужно ли отправлять уведомление.
 //
-// TODO: уведомление отправляется только при выполнении обоих входных условий.
+// TODO: верните true, только если emailVerified и notificationsEnabled одновременно равны true.
 func ShouldNotify(emailVerified, notificationsEnabled bool) bool {
 	return false
 }
 
 // IsValidScore проверяет корректность оценки.
 //
-// TODO: оценка должна входить в допустимый диапазон.
+// TODO: верните true для score от 0 до 100 включительно; вне диапазона верните false.
 func IsValidScore(score int) bool {
 	return false
 }
 
 // IsInRange проверяет, что value находится в диапазоне [min, max].
 //
-// TODO: проверьте попадание значения в диапазон вместе с границами.
+// TODO: верните true, если value находится между min и max включительно; иначе false.
 func IsInRange(value, min, max int) bool {
 	return false
 }
 
 // IsLeapYear проверяет, является ли год високосным.
 //
-// TODO: реализуйте стандартное правило високосного года.
-// Проверьте обычные годы, века и годы, кратные 400.
+// TODO: верните true, если год кратен 400 либо кратен 4, но не кратен 100. Для остальных лет верните false.
 func IsLeapYear(year int) bool {
 	return false
 }
 
 // CanWithdraw проверяет, можно ли снять деньги.
 //
-// TODO: учитывайте блокировку аккаунта, сумму снятия и доступный баланс.
+// TODO: верните true, если аккаунт не заблокирован, amount > 0 и balance >= amount. В остальных случаях верните false.
 func CanWithdraw(balance, amount int, blocked bool) bool {
 	return false
 }
 
 // LoginAllowed проверяет, разрешён ли вход.
 //
-// TODO: вход разрешён только при успешной проверке пароля и второго фактора.
+// TODO: верните true, только если passwordOK и otpOK одновременно равны true.
 func LoginAllowed(passwordOK, otpOK bool) bool {
 	return false
 }
 
 // IsEmpty проверяет, является ли строка пустой.
 //
-// TODO: отличайте пустую строку от строки с пробелами или другими символами.
+// TODO: верните true только для строки длиной 0. Пробел, перевод строки и любой другой символ означают непустую строку.
 func IsEmpty(text string) bool {
 	return false
 }
 
 // Not возвращает противоположное bool-значение.
 //
-// TODO: реализуйте логическое отрицание.
+// TODO: верните логическое значение, противоположное flag.
 func Not(flag bool) bool {
 	return false
 }
