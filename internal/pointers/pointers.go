@@ -8,6 +8,7 @@ package pointers
 //
 // TODO: если p не nil, верните значение по адресу, даже если оно равно 0. Если p nil, верните def.
 func ValueOrDefault(p *int, def int) int {
+
 	return 0
 }
 
