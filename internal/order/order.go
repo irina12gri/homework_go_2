@@ -1,6 +1,8 @@
 package order
 
-import "strconv"
+import (
+	"fmt"
+)
 
 // Блок order — объединяющая задача.
 // Здесь нужно закрепить:
@@ -37,5 +39,5 @@ func OrderSummary(status int, priceRub int, paid bool) string {
 	case StatusCanceled:
 		statusCorrected = "canceled"
 	}
-	return "status=" + statusCorrected + " payment=" + payment + " price_kop=" + strconv.Itoa(priceKop)
+	return fmt.Sprintf("status=%s payment=%s price_kop=%d", statusCorrected, payment, priceKop)
 }
